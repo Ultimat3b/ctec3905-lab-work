@@ -1,0 +1,49 @@
+/*nav {
+    display: flex;
+  }*/
+
+  /* flex allows for the ability of the object to move according 
+  to the width of the page therefore increasing or decreasing in
+  size*/
+  
+  nav {
+    display: block; /*ddsg*/
+    width: 15vw;
+    height: 100%;
+    background-color: rgb(122, 76, 122);
+    list-style-type: none;
+  }
+
+  nav a {
+    display: block;
+    
+    list-style: none;
+    background-color: grey; 
+    color: gold;
+    padding: 60;
+    margin: 30;
+    width: 30vw;
+    transition: background-color 1s;
+  }
+
+  nav a:hover {
+    background-color: red; 
+  }
+
+
+  p {
+    display: flex;
+    color: gold;
+    background-color: blue;
+  }
+
+  h1 {
+    display: flex;
+    color: blue;
+    background-color: gold;
+  }
+
+
+  header, main {
+    overflow: auto;
+  }

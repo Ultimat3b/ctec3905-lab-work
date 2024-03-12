@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 20;
+    background-color: red;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+}
+
+nav.open {
+    transform: translateX(0);
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rebeccapurple;
+
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 100;
+    transform: translateX(-110vw);
+    transition: 0.5s;
+}
+
+/* will only apply and display these things for 
+    an object with this type of atribute*/
+
+#menuToggler {
+    position: flex;
+    top: 0;
+    right:0;
+    z-index: 1;
+    /* more custom styles */
+}
+
+
+nav a {
+    background-color: grey;
+    /*background of the object*/
+    color: gold;
+    padding: 60;
+    /*size of of object relative to the size of the page higher the number bigger the object*/
+    margin: 60;
+    /* space/size of the object and the gap inbetween them*/
+
+
+    /* transition of the object appearing on the screen (depends on which section its
+    in this is in the box so therefore the box is what is transitioning)
+    also transition speed for other things like the overspeed*/
+    transition: background-color 1s;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  header {
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 70%, 40%);
+    color: hsl(0, 70%, 80%);
+  }
+  
+  #search {
+    order: 1;
+  }
+  
+  main section {
+    padding: 1em;
+    border-bottom: 0.5px dotted hsl(0, 70%, 80%);
+  }
+  
+  @media screen and (min-width: 420px) {
+    header {
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    header, main section {
+          padding: 1em 25vw;
+      }
+  }
+
+  input:invalid {
+    background-color: hsl(0, 70%, 70%);
+    border-color: hsl(0, 100%, 70%)
+  }
+
+
+/* this links with the html Ranges title 
+where we have a pre inputted colour and height set
+the position relative and the height of the box set in here */
+
+  :root {
+    --height: 50%;
+    --bg-colour: #ffffff;
+  --fg-colour: #000000;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  #heightTarget {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+    width: 4em;
+    background-color: hsl(0, 70%, 40%);
+    height: var(--height);
+    transition: 0.4s;
+  }
+  
+  /* links wit the colours has the background colour as a variable named 
+  --bg-colour which is called in the scripts*/
+
+  #colours {
+    background-color: var(--bg-colour);
+    color: var(--fg-colour);
+  }

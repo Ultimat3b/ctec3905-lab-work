@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>This is my title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+  <header>
+    <section id="search">
+      <input placeholder="&#128269; search" id="myQuery" aria-label="search">
+      <button id="searchButton">search</button>
+    </section>
+    <h1>User Input</h1>
+  </header>
+
+
+  <div id="menuToggler">&#8801;</div>
+
+
+  <nav id="menu">
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+  </nav>
+
+
+  <section>
+    <h2>Basic input</h2>
+    <label for="myName">Enter your name</label>
+    <input id="myName" , value="Enter your name here">
+  </section>
+
+
+  <section>
+    <h2>More input choices</h2>
+  <input type="color"> <!-- gives the colour choice you will see it under the your name -->
+  <input type="date"> <!-- gives date option-->
+
+  <input type="color" value="#ff0000"> <!-- gives pre values for the input works for both options-->
+  <input type="date" value="2021-01-01">
+</section>
+
+<!-- will not let you input anything other then a number you can use the arrows to go up-->
+  <section>
+  <h2>Numbers</h2>
+  <label for="myAge">Enter your age: </label>
+  <input id="myAge" type="number" max="100" min="1" step="5" >
+</section>
+
+
+<!-- links with the css class to create box that links with the label-->
+<section class="relative">
+  <h2>Ranges</h2>
+  <label for="myHeight">Element height: </label>
+  <input id="myHeight" type="range" value="50">
+  <div id="heightTarget"></div>
+</section>
+
+
+<!-- has a link with the scripts in js and the styles in css -->
+<section id="colours">
+  <h2>Colours</h2>
+  <label for="myBG">Background: </label>
+  <input id="myBG" type="color" value="#046307"><br>
+  <label for="myFG">Foreground: </label>
+  <input id="myFG" type="color" value="#ffffff">
+</section>
+
+
+<section>
+  <form id="login">
+    <h2>Sign in</h2>
+    <label for="myUser">Username: </label>
+    <input id="myUser" name="username" placeholder="enter your username" required>
+    <label for="myPassword">Password: </label>
+    <input id="myPassword" type="password" name="password" placeholder="enter your password" minlength="8" required>
+    <label for="myConfirmation">Confirm password: </label>
+    <input id="myConfirmation" type="password" placeholder="confirm password" required>
+    <input type="submit" value="login">
+  </form>
+</section>
+
+
+  <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
